@@ -1,6 +1,7 @@
 mcm=1
 
 def factornum(num:int):
+    """Function for factoring numbers (used to solve problem 3)"""
     pfactors = []
     while (num != 1):
         i = 2
@@ -12,6 +13,7 @@ def factornum(num:int):
     return pfactors
 
 def greatest_common_divisor(num1:int, num2:int):
+    """Function that returns the greatest common divisor of two numbers"""
     factors1=factornum(num1)
     factors2=factornum(num2)
     maxfactors =factors1.copy()
